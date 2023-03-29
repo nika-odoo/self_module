@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <menuitem id="gogrocery_root_menu" name="Go Grocery" web_icon="gogrocery,static/description/odoo.svg" >
+        <menuitem id="gogrocery_second_level_menu" name="Product" sequence = "1">
+            <menuitem id="gogrocery_admin_menu_action1" action="gogrocery_product_action" />
+        </menuitem>
+
+        <menuitem id="gogrocery_first_level_menu" name="Profile" sequence = "0">
+            <menuitem id="gogrocery_admin_menu_action" action="gogrocery_admin_action" />
+            <!-- <menuitem id="gogrocery_admin_menu_action3" action="gogrocery_admin_tag_action" /> -->
+            <!-- <menuitem id="gogrocery_admin_menu_action4" action="gogrocery_admin_offer_action" /> -->
+        </menuitem>
+    </menuitem>
+
+</odoo>

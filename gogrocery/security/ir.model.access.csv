@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+gogrocery.access_gogrocery_admin,access_gogrocery_admin,gogrocery.model_gogrocery_admin,,1,1,1,1
+gogrocery.access_gogrocery_product,access_gogrocery_product,gogrocery.model_gogrocery_product,,1,1,1,1
+gogrocery.access_gogrocery_product_type,access_gogrocery_product_type,gogrocery.model_gogrocery_product_type,base.group_user,1,1,1,1

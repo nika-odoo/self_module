@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="gogrocery_admin_action" model="ir.actions.act_window">
+        <field name="name">Profile</field>
+        <field name="res_model">gogrocery.admin</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Records Found
+            </p>
+        </field>
+    </record>
+
+
+    <record id="admin_view_form" model="ir.ui.view">
+        <field name="name">gogrocery.admin.form</field>
+        <field name="model">gogrocery.admin</field>
+        <field name="arch" type="xml">
+            <form string="Profile">
+                <sheet>
+                   
+                        <h1>
+                            <field name="name" placeholder="" />
+                        </h1>
+                   
+                    <group>
+                        <field name="shop_name" />
+                        <field name="contact_num" />
+                        <field name="address" />
+                        <field name="email" />
+                        <field name="postcode" />
+                        <field name="description" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="gogrocery_admin_view_tree" model="ir.ui.view">
+        <field name="name">gogrocery.admin.tree</field>
+        <field name="model">gogrocery.admin</field>
+        <field name="arch" type="xml">
+            <tree string="Channel">
+                <field name="name" />
+                <field name="shop_name" />
+                <field name="contact_num" />
+                <field name="email" />
+                <field name="postcode" />
+                <field name="description" />
+
+            </tree>
+        </field>
+    </record>
+
+
+</odoo> 
