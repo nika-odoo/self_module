@@ -7,9 +7,10 @@ class GroceryProduct(models.Model):
     _rec_name = "product_name"
 
     product_name = fields.Char(required=True)
-    shop_name = fields.Char(required=True)
+    shop_ids = fields.Many2many("gogrocery.admin",  required=True)
     price = fields.Float()
     category_ids = fields.Many2one("gogrocery.product.type", string = "Product Type")
+    discount = fields.Boolean()
     discounted_price = fields.Float()
     quantity = fields.Float()
     description = fields.Text()

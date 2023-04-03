@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="gogrocery_order_action" model="ir.actions.act_window">
+        <field name="name">Order</field>
+        <field name="res_model">gogrocery.order</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No Records Found
+            </p>
+        </field>
+    </record>
+
+
+    <record id="order_view_form" model="ir.ui.view">
+        <field name="name">gogrocery.order.form</field>
+        <field name="model">gogrocery.order</field>
+        <field name="arch" type="xml">
+            <form string="Order">
+                <sheet>
+                    <group>
+                        <field name="name" placeholder="" />
+                        <field name="id" />
+                        <field name="status" />
+                        <field name="order_price" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+</odoo> 

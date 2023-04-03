@@ -7,14 +7,22 @@
     'description': """
     Description text 
     """,
+
+    'depends' : ['product'],
+
     'data': [
         'security/ir.model.access.csv',
         'view/gogrocery_admin_view.xml',
-        'view/gogrocery_product_view.xml',
+        # 'view/gogrocery_product_view.xml',
+        'view/product.xml',
+        'view/gogrocery_order_view.xml',
         'view/gogrocery_menus.xml'
     ],
 
     'demo': [
+        
+
+
 
     ],
     'application': True,

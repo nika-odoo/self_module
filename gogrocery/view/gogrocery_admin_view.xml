@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
 
-    <record id="gogrocery_admin_action" model="ir.actions.act_window">
+    <record id="gogrocery_profile_action" model="ir.actions.act_window">
         <field name="name">Profile</field>
         <field name="res_model">gogrocery.admin</field>
         <field name="view_mode">tree,form</field>

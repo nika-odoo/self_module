@@ -21,29 +21,19 @@
                 <sheet>
                     <group>
                         <field name="product_name" />
-                        <field name="shop_name" />
+                        <field name="category_ids" />
+                        <field name="price" />
+                        <field name="discount" />
+                        <field name="discounted_price"
+                            attrs="{'invisible': [('discount', '=', False)]}" />
+                        <field name="quantity" />
                         <field name="description" />
 
                     </group>
                     <notebook>
-                        <page string="Product">
-                            <group>
-                                <field name="category_ids" />
-                                <field name="price" />
-                                <field name="discounted_price" />
-                                <field name="quantity" />
-                                
-                            </group>
+                        <page string="Shop">
+                            <field name="shop_ids" />
                         </page>
-                        <!-- <page string="Others Info">
-                            <group>
-                                <field name="buyer_id" />
-                                <field name="seller_id" />
-                            </group>
-                        </page>
-                        <page string="Offers">
-                                <field name="offer_ids" />
-                        </page> -->
                     </notebook>
                 </sheet>
             </form>
@@ -57,7 +47,7 @@
         <field name="arch" type="xml">
             <tree string="Channel">
                 <field name="product_name" />
-                <field name="shop_name" />
+                <field name="shop_ids" />
                 <field name="category_ids" />
                 <field name="price" />
                 <field name="discounted_price" />
